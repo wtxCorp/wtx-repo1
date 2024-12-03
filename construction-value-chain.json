@@ -1,0 +1,162 @@
+{
+  "construction_value_chains": {
+    "home_builders": {
+      "dr_horton": {
+        "product": {
+          "raw_materials": ["Land", "Lumber", "Construction materials"],
+          "suppliers": "Bulk purchasing agreements",
+          "quality_control": "Construction standards",
+          "sourcing_strategy": "National supplier networks"
+        },
+        "service": {
+          "core_services": ["Home design", "Construction", "Warranty"],
+          "operations": "Multi-state construction",
+          "quality_standards": "Building specifications",
+          "customer_experience": "Design centers"
+        },
+        "trade": {
+          "locations": "33 states operations",
+          "market_focus": "Entry-level homes",
+          "distribution": "Regional divisions",
+          "market_strategy": "Volume building"
+        },
+        "digitalization": {
+          "systems": ["Virtual tours", "Construction management"],
+          "operations": "Project tracking",
+          "customer_engagement": "Digital design center",
+          "data_analytics": "Market trends"
+        },
+        "finance": {
+          "revenue_streams": ["Home sales", "Mortgages"],
+          "investment_areas": "Land acquisition",
+          "financial_programs": "Customer financing",
+          "cost_management": "Scale efficiency"
+        },
+        "government": {
+          "regulations": ["Building codes", "Zoning laws"],
+          "compliance": "Environmental permits",
+          "certifications": "Construction standards",
+          "safety_metrics": "OSHA requirements"
+        }
+      },
+      "lennar": {
+        "product": {
+          "raw_materials": ["Land holdings", "Construction materials", "Prefab components"],
+          "suppliers": "Strategic partnerships",
+          "quality_control": "Everything's Included® standards",
+          "sourcing_strategy": "Vertical integration"
+        },
+        "service": {
+          "core_services": ["Home construction", "Mortgage", "Insurance"],
+          "operations": "Multi-market presence",
+          "quality_standards": "Standardized features",
+          "customer_experience": "Digital first"
+        },
+        "trade": {
+          "locations": "Multi-regional presence",
+          "market_focus": "Multiple price points",
+          "distribution": "Regional operations",
+          "market_strategy": "Technology integration"
+        },
+        "digitalization": {
+          "systems": ["BIM implementation", "Smart home tech"],
+          "operations": "Construction automation",
+          "customer_engagement": "Virtual tours",
+          "data_analytics": "Market intelligence"
+        },
+        "finance": {
+          "revenue_streams": ["Home sales", "Financial services"],
+          "investment_areas": "Land banking",
+          "financial_programs": "Mortgage services",
+          "cost_management": "Supply chain optimization"
+        },
+        "government": {
+          "regulations": ["Building permits", "Environmental"],
+          "compliance": "Construction codes",
+          "certifications": "Safety standards",
+          "environmental": "Sustainability requirements"
+        }
+      }
+    },
+    "home_improvement": {
+      "home_depot": {
+        "product": {
+          "raw_materials": ["Building materials", "Tools", "Home products"],
+          "suppliers": "Direct sourcing",
+          "quality_control": "Product standards",
+          "sourcing_strategy": "Private label development"
+        },
+        "service": {
+          "core_services": ["Retail", "Pro services", "Installation"],
+          "operations": "Store management",
+          "quality_standards": "Service guarantees",
+          "customer_experience": "Expert advice"
+        },
+        "trade": {
+          "locations": "2,300+ stores",
+          "market_focus": "DIY and Pro customers",
+          "distribution": "Supply chain network",
+          "market_strategy": "Omnichannel retail"
+        },
+        "digitalization": {
+          "systems": ["Inventory management", "Pro app"],
+          "operations": "Store automation",
+          "customer_engagement": "Online shopping",
+          "data_analytics": "Consumer insights"
+        },
+        "finance": {
+          "revenue_streams": ["Retail sales", "Services"],
+          "investment_areas": "Digital transformation",
+          "financial_programs": "Pro credit",
+          "cost_management": "Operational efficiency"
+        },
+        "government": {
+          "regulations": ["Product safety", "Labor laws"],
+          "compliance": "Retail standards",
+          "certifications": "Environmental compliance",
+          "safety_metrics": "OSHA guidelines"
+        }
+      }
+    },
+    "utilities": {
+      "duke_energy": {
+        "product": {
+          "raw_materials": ["Power generation assets", "Grid infrastructure"],
+          "suppliers": "Equipment manufacturers",
+          "quality_control": "Energy standards",
+          "sourcing_strategy": "Long-term contracts"
+        },
+        "service": {
+          "core_services": ["Power distribution", "Grid maintenance"],
+          "operations": "Network management",
+          "quality_standards": "Reliability metrics",
+          "customer_experience": "Service stability"
+        },
+        "trade": {
+          "locations": "Multi-state operations",
+          "market_focus": "Regulated markets",
+          "distribution": "Power grid",
+          "market_strategy": "Regional expansion"
+        },
+        "digitalization": {
+          "systems": ["Smart grid", "Automated metering"],
+          "operations": "Grid modernization",
+          "customer_engagement": "Usage monitoring",
+          "data_analytics": "Network optimization"
+        },
+        "finance": {
+          "revenue_streams": ["Rate base returns", "Services"],
+          "investment_areas": "Infrastructure",
+          "financial_programs": "Capital projects",
+          "cost_management": "Regulatory efficiency"
+        },
+        "government": {
+          "regulations": ["Utility commission", "Environmental"],
+          "compliance": "Safety standards",
+          "certifications": "Grid reliability",
+          "environmental": "Emissions requirements"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "food_value_chains": {
+    "fast_food": {
+      "mcdonalds": {
+        "product": {
+          "raw_materials": ["beef", "potatoes", "produce", "packaging"],
+          "suppliers": "Global Supply Chain program",
+          "quality_control": "Standardized specifications",
+          "sourcing_strategy": "Dedicated supplier partnerships"
+        },
+        "service": {
+          "training": "Hamburger University",
+          "operations": "Franchise model",
+          "quality_standards": "Strict operational guidelines",
+          "customer_experience": "Quick service standards"
+        },
+        "trade": {
+          "locations": "40,000+ globally",
+          "ownership": "Mix of company-owned and franchise",
+          "distribution": "Regional distribution centers",
+          "market_strategy": "Strategic location selection"
+        },
+        "digitalization": {
+          "ordering": "Mobile app platform",
+          "operations": "AI-powered drive-thru",
+          "customer_engagement": "Digital menu boards",
+          "data_analytics": "Customer behavior tracking"
+        },
+        "finance": {
+          "revenue_streams": ["Franchise royalties", "Real estate revenue"],
+          "investment_areas": "Digital transformation",
+          "financial_programs": "Supplier financing",
+          "cost_management": "Supply chain optimization"
+        },
+        "government": {
+          "regulations": ["Food safety", "Labor laws"],
+          "compliance": "Health inspections",
+          "certifications": "Quality standards",
+          "environmental": "Sustainability requirements"
+        }
+      },
+      "wendys": {
+        "product": {
+          "raw_materials": ["Fresh beef", "produce", "dairy"],
+          "suppliers": "Vertical integration",
+          "quality_control": "Never-frozen beef program",
+          "sourcing_strategy": "Local partnerships"
+        },
+        "service": {
+          "training": "Quality preparation focus",
+          "operations": "Franchise support",
+          "quality_standards": "Fresh preparation",
+          "customer_experience": "Restaurant atmosphere"
+        },
+        "trade": {
+          "locations": "7,000+ globally",
+          "ownership": "Franchise-focused",
+          "distribution": "Regional supply chain",
+          "market_strategy": "Drive-thru optimization"
+        },
+        "digitalization": {
+          "ordering": "Rewards program",
+          "operations": "Kitchen management systems",
+          "customer_engagement": "Mobile ordering",
+          "data_analytics": "Performance metrics"
+        },
+        "finance": {
+          "revenue_streams": ["Franchise fees", "Royalties"],
+          "investment_areas": "Modernization",
+          "financial_programs": "Franchise financing",
+          "cost_management": "Operational efficiency"
+        },
+        "government": {
+          "regulations": ["Beef sourcing", "Food safety"],
+          "compliance": "Temperature monitoring",
+          "certifications": "Health standards",
+          "environmental": "Waste management"
+        }
+      },
+      "burger_king": {
+        "product": {
+          "raw_materials": ["Beef", "produce", "bread"],
+          "suppliers": "Global network",
+          "quality_control": "Standardized equipment",
+          "sourcing_strategy": "International sourcing"
+        },
+        "service": {
+          "training": "BK University",
+          "operations": "Restaurant Excellence Program",
+          "quality_standards": "Flame-grilling specification",
+          "customer_experience": "Have it your way promise"
+        },
+        "trade": {
+          "locations": "19,000+ globally",
+          "ownership": "Master franchise agreements",
+          "distribution": "Global supply chain",
+          "market_strategy": "International expansion"
+        },
+        "digitalization": {
+          "ordering": "Mobile app",
+          "operations": "Digital menu optimization",
+          "customer_engagement": "Loyalty program",
+          "data_analytics": "Performance tracking"
+        },
+        "finance": {
+          "revenue_streams": ["Master franchise fees", "Royalties"],
+          "investment_areas": "Digital transformation",
+          "financial_programs": "Equipment leasing",
+          "cost_management": "Scale efficiency"
+        },
+        "government": {
+          "regulations": ["International trade", "Food safety"],
+          "compliance": "Local requirements",
+          "certifications": "Quality standards",
+          "environmental": "Sustainability guidelines"
+        }
+      },
+      "kfc": {
+        "product": {
+          "raw_materials": ["Chicken", "spices", "packaging"],
+          "suppliers": "Dedicated chicken suppliers",
+          "quality_control": "Secret recipe maintenance",
+          "sourcing_strategy": "Pressure fryer technology"
+        },
+        "service": {
+          "training": "Cooking procedures",
+          "operations": "Quality assurance",
+          "quality_standards": "Original recipe",
+          "customer_experience": "Quick service"
+        },
+        "trade": {
+          "locations": "25,000+ globally",
+          "ownership": "Franchise model",
+          "distribution": "Regional suppliers",
+          "market_strategy": "Emerging markets focus"
+        },
+        "digitalization": {
+          "ordering": "POS integration",
+          "operations": "Kitchen displays",
+          "customer_engagement": "Digital ordering",
+          "data_analytics": "Sales tracking"
+        },
+        "finance": {
+          "revenue_streams": ["Franchise fees", "Equipment sales"],
+          "investment_areas": "Market expansion",
+          "financial_programs": "Regional financing",
+          "cost_management": "Supply chain efficiency"
+        },
+        "government": {
+          "regulations": ["Poultry standards", "Food safety"],
+          "compliance": "International trade",
+          "certifications": "Quality control",
+          "environmental": "Waste management"
+        }
+      },
+      "chipotle": {
+        "product": {
+          "raw_materials": ["Organic ingredients", "meats", "produce"],
+          "suppliers": "Food with Integrity program",
+          "quality_control": "Local partnerships",
+          "sourcing_strategy": "Sustainable sourcing"
+        },
+        "service": {
+          "training": "Cross-training program",
+          "operations": "In-house preparation",
+          "quality_standards": "Fresh ingredients",
+          "customer_experience": "Visible kitchen"
+        },
+        "trade": {
+          "locations": "2,500+ company-owned",
+          "ownership": "Direct ownership",
+          "distribution": "Regional suppliers",
+          "market_strategy": "Urban focus"
+        },
+        "digitalization": {
+          "ordering": "Second make-line",
+          "operations": "Digital kitchen",
+          "customer_engagement": "App features",
+          "data_analytics": "Customer insights"
+        },
+        "finance": {
+          "revenue_streams": ["Direct sales", "Digital orders"],
+          "investment_areas": "Technology",
+          "financial_programs": "Supplier development",
+          "cost_management": "Efficiency programs"
+        },
+        "government": {
+          "regulations": ["Food safety", "Organic certification"],
+          "compliance": "Health protocols",
+          "certifications": "Organic standards",
+          "environmental": "Sustainability practices"
+        }
+      }
+    }
+  }
+}

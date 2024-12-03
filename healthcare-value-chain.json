@@ -1,0 +1,162 @@
+{
+  "healthcare_value_chains": {
+    "hospital_networks": {
+      "hca_healthcare": {
+        "product": {
+          "raw_materials": ["Medical supplies", "Pharmaceuticals", "Equipment"],
+          "suppliers": "Global medical suppliers",
+          "quality_control": "Medical standards compliance",
+          "sourcing_strategy": "Centralized procurement"
+        },
+        "service": {
+          "core_services": ["Emergency care", "Specialty departments", "Outpatient"],
+          "operations": "Multi-facility management",
+          "quality_standards": "Clinical excellence programs",
+          "patient_experience": "Integrated care model"
+        },
+        "trade": {
+          "locations": "185+ hospitals",
+          "coverage": "2,000+ care sites",
+          "distribution": "Regional networks",
+          "market_strategy": "Multi-state presence"
+        },
+        "digitalization": {
+          "systems": ["Electronic health records", "Telehealth platform"],
+          "operations": "Clinical management software",
+          "patient_engagement": "Patient portal",
+          "data_analytics": "Healthcare outcomes tracking"
+        },
+        "finance": {
+          "revenue_streams": ["Insurance partnerships", "Direct patient care"],
+          "investment_areas": "Facility modernization",
+          "financial_programs": "Revenue cycle management",
+          "cost_management": "Operational efficiency"
+        },
+        "government": {
+          "regulations": ["Medicare/Medicaid compliance", "HIPAA"],
+          "compliance": "Healthcare standards",
+          "certifications": "Medical licensing",
+          "quality_metrics": "CMS requirements"
+        }
+      },
+      "commonspirit_health": {
+        "product": {
+          "raw_materials": ["Medical supplies", "Equipment", "Pharmaceuticals"],
+          "suppliers": "Group purchasing organization",
+          "quality_control": "Faith-based standards",
+          "sourcing_strategy": "Vendor partnerships"
+        },
+        "service": {
+          "core_services": ["Community health", "Specialty care", "Preventive care"],
+          "operations": "Faith-based model",
+          "quality_standards": "Religious healthcare guidelines",
+          "patient_experience": "Holistic care approach"
+        },
+        "trade": {
+          "locations": "140+ hospitals",
+          "coverage": "Nationwide network",
+          "distribution": "Regional presence",
+          "market_strategy": "Community focus"
+        },
+        "digitalization": {
+          "systems": ["Unified records", "Virtual care"],
+          "operations": "Healthcare IT integration",
+          "patient_engagement": "Digital health services",
+          "data_analytics": "Population health management"
+        },
+        "finance": {
+          "revenue_streams": ["Patient services", "Government programs"],
+          "investment_areas": "Community health",
+          "financial_programs": "Charitable care",
+          "cost_management": "Non-profit efficiency"
+        },
+        "government": {
+          "regulations": ["Religious exemptions", "Healthcare laws"],
+          "compliance": "Federal grants",
+          "certifications": "Medical standards",
+          "quality_metrics": "Community benefit requirements"
+        }
+      }
+    },
+    "specialized_care": {
+      "mayo_clinic": {
+        "product": {
+          "raw_materials": ["Research equipment", "Medical supplies", "Specialized tools"],
+          "suppliers": "Medical technology partners",
+          "quality_control": "Research protocols",
+          "sourcing_strategy": "Innovation focus"
+        },
+        "service": {
+          "core_services": ["Expert consultation", "Specialized treatment", "Research"],
+          "operations": "Academic medical center",
+          "quality_standards": "Clinical excellence",
+          "patient_experience": "Integrated care"
+        },
+        "trade": {
+          "locations": "Multiple flagship sites",
+          "coverage": "International presence",
+          "distribution": "Specialized networks",
+          "market_strategy": "Excellence centers"
+        },
+        "digitalization": {
+          "systems": ["Digital diagnostics", "Research databases"],
+          "operations": "Clinical trials management",
+          "patient_engagement": "Remote consultation",
+          "data_analytics": "Research insights"
+        },
+        "finance": {
+          "revenue_streams": ["Patient care", "Research grants"],
+          "investment_areas": "Medical innovation",
+          "financial_programs": "International patients",
+          "cost_management": "Research efficiency"
+        },
+        "government": {
+          "regulations": ["Clinical trials", "Research standards"],
+          "compliance": "Medical research",
+          "certifications": "Academic medicine",
+          "quality_metrics": "Treatment outcomes"
+        }
+      }
+    },
+    "pharmacy_chains": {
+      "cvs_health": {
+        "product": {
+          "raw_materials": ["Pharmaceuticals", "Healthcare products", "Private label"],
+          "suppliers": "Drug manufacturers",
+          "quality_control": "Pharmacy standards",
+          "sourcing_strategy": "Direct distribution"
+        },
+        "service": {
+          "core_services": ["Pharmacy", "MinuteClinic", "Insurance"],
+          "operations": "Integrated healthcare",
+          "quality_standards": "Pharmacy protocols",
+          "patient_experience": "Convenience focus"
+        },
+        "trade": {
+          "locations": "9,900+ retail sites",
+          "coverage": "HealthHUB concept",
+          "distribution": "Pharmacy network",
+          "market_strategy": "Healthcare ecosystem"
+        },
+        "digitalization": {
+          "systems": ["Prescription app", "Health monitoring"],
+          "operations": "Pharmacy management",
+          "patient_engagement": "Digital services",
+          "data_analytics": "Health insights"
+        },
+        "finance": {
+          "revenue_streams": ["Pharmacy", "PBM services", "Insurance"],
+          "investment_areas": "Healthcare integration",
+          "financial_programs": "Insurance partnerships",
+          "cost_management": "Scale efficiency"
+        },
+        "government": {
+          "regulations": ["Pharmacy laws", "Insurance oversight"],
+          "compliance": "Healthcare standards",
+          "certifications": "Pharmacy licenses",
+          "quality_metrics": "Safety protocols"
+        }
+      }
+    }
+  }
+}
