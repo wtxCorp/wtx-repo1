@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Explorer 1</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #f5f6fa;
+            --text-color: #2c3e50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .industry-selector {
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .industry-btn {
+            padding: 0.5rem 1rem;
+            background-color: var(--secondary-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .industry-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .company-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .company-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .company-name {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .company-details {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .detail-section {
+            border-top: 1px solid #eee;
+            padding-top: 1rem;
+        }
+
+        .detail-section h3 {
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.2rem;
+            color: var(--secondary-color);
+        }
+
+        .error {
+            text-align: center;
+            padding: 2rem;
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>World Explorer 1</h1>
+    </header>
+
+    <div class="container">
+        <div class="industry-selector">
+            <button class="industry-btn" data-industry="food">Food Industry</button>
+            <button class="industry-btn" data-industry="healthcare">Healthcare Industry</button>
+            <button class="industry-btn" data-industry="construction">Construction Industry</button>
+        </div>
+
+        <div id="content" class="company-grid">
+            <div class="loading">Select an industry to explore...</div>
+        </div>
+    </div>
+
+    <script>
+        const jsonUrls = {
+            food: 'https://raw.githubusercontent.com/yourusername/yourrepo/main/food-value-chain.json',
+            healthcare: 'https://raw.githubusercontent.com/yourusername/yourrepo/main/healthcare-value-chain.json',
+            construction: 'https://raw.githubusercontent.com/yourusername/yourrepo/main/construction-value-chain.json'
+        };
+
+        const contentDiv = document.getElementById('content');
+
+        function displayCompanies(data, industry) {
+            contentDiv.innerHTML = '';
+            
+            const companies = getCompaniesFromData(data, industry);
+            
+            Object.entries(companies).forEach(([name, details]) => {
+                const card = createCompanyCard(name, details);
+                contentDiv.appendChild(card);
+            });
+        }
+
+        function getCompaniesFromData(data, industry) {
+            switch(industry) {
+                case 'food':
+                    return data.food_value_chains.fast_food;
+                case 'healthcare':
+                    return {
+                        ...data.healthcare_value_chains.hospital_networks,
+                        ...data.healthcare_value_chains.specialized_care,
+                        ...data.healthcare_value_chains.pharmacy_chains
+                    };
+                case 'construction':
+                    return {
+                        ...data.construction_value_chains.home_builders,
+                        ...data.construction_value_chains.home_improvement,
+                        ...data.construction_value_chains.utilities
+                    };
+                default:
+                    return {};
+            }
+        }
+
+        function createCompanyCard(name, details) {
+            const card = document.createElement('div');
+            card.className = 'company-card';
+
+            const formattedName = name.split('_').map(word => 
+                word.charAt(0).toUpperCase() + word.slice(1)
+            ).join(' ');
+
+            card.innerHTML = `
+                <h2 class="company-name">${formattedName}</h2>
+                <div class="company-details">
+                    ${createDetailSection('Product', details.product)}
+                    ${createDetailSection('Service', details.service)}
+                    ${createDetailSection('Trade', details.trade)}
+                    ${createDetailSection('Digital', details.digitalization)}
+                    ${createDetailSection('Finance', details.finance)}
+                    ${createDetailSection('Government', details.government)}
+                </div>
+            `;
+
+            return card;
+        }
+
+        function createDetailSection(title, details) {
+            if (!details) return '';
+
+            const detailsList = Object.entries(details)
+                .map(([key, value]) => {
+                    const formattedKey = key.split('_').join(' ');
+                    const formattedValue = Array.isArray(value) 
+                        ? value.join(', ') 
+                        : value;
+                    return `<p><strong>${formattedKey}:</strong> ${formattedValue}</p>`;
+                })
+                .join('');
+
+            return `
+                <div class="detail-section">
+                    <h3>${title}</h3>
+                    ${detailsList}
+                </div>
+            `;
+        }
+
+        async function fetchData(industry) {
+            try {
+                contentDiv.innerHTML = '<div class="loading">Loading data...</div>';
+                const response = await fetch(jsonUrls[industry]);
+                if (!response.ok) throw new Error('Network response was not ok');
+                const data = await response.json();
+                displayCompanies(data, industry);
+            } catch (error) {
+                contentDiv.innerHTML = `
+                    <div class="error">
+                        Error loading data. Please make sure the JSON files are accessible 
+                        and properly formatted.
+                    </div>
+                `;
+                console.error('Error:', error);
+            }
+        }
+
+        document.querySelectorAll('.industry-btn').forEach(button => {
+            button.addEventListener('click', (e) => {
+                const industry = e.target.dataset.industry;
+                fetchData(industry);
+            });
+        });
+    </script>
+</body>
+</html>
