@@ -129,7 +129,7 @@
         const jsonUrls = {
             food: 'https://raw.githubusercontent.com/wtxCorp/wtx-repo1/refs/heads/gh-pages/food-value-chain.json',
             healthcare: 'https://raw.githubusercontent.com/wtxCorp/wtx-repo1/refs/heads/gh-pages/healthcare-value-chain.json',
-            construction: 'https://raw.githubusercontent.com/yourusername/yourrepo/main/construction-value-chain.json'
+            construction: 'https://raw.githubusercontent.com/wtxCorp/wtx-repo1/refs/heads/gh-pages/construction-value-chain.json'
         };
 
         const contentDiv = document.getElementById('content');
